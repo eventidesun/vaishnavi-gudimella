@@ -1,27 +1,11 @@
-.button {
-    display: inline-block;    /* Aligns the button properly */
-    padding: 10px 20px;       /* Adds space inside the button */
-    margin: 10px;             /* Adds space around the button */
-    background-color: #007BFF; /* Background color */
-    color: white;             /* Text color */
-    text-align: center;       /* Centers the text inside the button */
-    text-decoration: none;    /* Removes underline from the link */
-    font-size: 16px;          /* Sets the font size */
-    font-family: Arial, sans-serif; /* Sets the font family */
-    border: none;             /* No borders */
-    border-radius: 5px;       /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for 3D effect */
-    transition: all 0.3s;     /* Smooth transition for hover effects */
+.home-button {
+    height: 60px;
+    padding: 0px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 500px;
 }
 
-.button:hover {
-    background-color: #0056b3; /* Darker shade on hover */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Larger shadow on hover */
-    transform: translateY(-2px); /* Slightly raises the button */
-}
-
-.button:active {
-    background-color: #004088; /* Even darker shade when clicked */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Smaller shadow when clicked */
-    transform: translateY(1px); /* Lowers the button back down */
+.home-button:hover {
+    transform: translateX(-3px) translateY(-3px); /* Diagonal movement */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); /* Shadow effect */
 }
