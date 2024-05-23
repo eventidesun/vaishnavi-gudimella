@@ -1,11 +1,64 @@
+body {
+    font-family: 'Verdana', sans-serif;
+    color: #0D2531;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+/* The contents within the header */
+.header-content {
+    /* font-family: 'Merriweather', sans-serif; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+}
+
 .home-button {
     height: 60px;
-    padding: 0px;
+    padding: 0;
     transition: transform 0.3s, box-shadow 0.3s;
-    border-radius: 500px;
+    border-radius: 30px;
 }
 
 .home-button:hover {
     transform: translateX(-3px) translateY(-3px); /* Diagonal movement */
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0px;
+    margin: 0;
+    width: 100%;
+}
+
+nav ul li {
+    margin: 0 10px; /* Space between links */
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #0D2531; /* Dark blue */
+}
+
+nav ul li a:hover {
+    color: #0056b3; /* Light blue */
+    transform: scale(1.05); /* Hover effect */
+}
+
+@media (max-width: 600px) {
+    nav ul li {
+        margin: 0 5px; /* Less space between links on smaller screens */
+        font-size: 14px; /* Smaller font size for small screens */
+    }
 }
