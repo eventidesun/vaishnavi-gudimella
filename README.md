@@ -1,2 +1,3 @@
 # eventidesun.github.io
-Portfolio Website
+Personal Portfolio about my projects and work
+...in progress
