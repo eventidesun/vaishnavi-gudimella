@@ -1,64 +1,42 @@
 body {
-    font-family: 'Verdana', sans-serif;
-    color: #0D2531;
-    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
     line-height: 1.6;
-}
-
-/* The contents within the header */
-.header-content {
-    /* font-family: 'Merriweather', sans-serif; */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 5%;
-}
-
-.home-button {
-    height: 60px;
-    padding: 0;
-    transition: transform 0.3s, box-shadow 0.3s;
-    border-radius: 30px;
-}
-
-.home-button:hover {
-    transform: translateX(-3px) translateY(-3px); /* Diagonal movement */
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); /* Shadow effect */
-}
-
-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-    padding: 0px;
     margin: 0;
-    width: 100%;
+    padding: 0;
 }
 
-nav ul li {
-    margin: 0 10px; /* Space between links */
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
 }
 
-nav ul li a {
+.nav {
+    list-style: none;
+    padding: 0;
+}
+
+.nav li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.nav a {
+    color: #fff;
     text-decoration: none;
-    font-size: 16px;
-    color: #0D2531; /* Dark blue */
 }
 
-nav ul li a:hover {
-    color: #0056b3; /* Light blue */
-    transform: scale(1.05); /* Hover effect */
+section {
+    padding: 20px;
 }
 
-@media (max-width: 600px) {
-    nav ul li {
-        margin: 0 5px; /* Less space between links on smaller screens */
-        font-size: 14px; /* Smaller font size for small screens */
-    }
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
